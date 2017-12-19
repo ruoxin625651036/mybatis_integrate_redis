@@ -8,5 +8,27 @@
     <artifactId>mybatis_integrate_redis</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!--mybatis 和 redis 的版本是否需要存在对应关系，redis只是作为缓存，mybatis底层并不需要用到，因此不需要-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis.caches</groupId>
+            <artifactId>mybatis-redis</artifactId>
+            <version>1.0.0-beta2</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
